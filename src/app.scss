@@ -1,0 +1,40 @@
+@import "./assets/scss/variables";
+@font-face {
+  font-family: ARCO;
+  src: url(assets/fonts/ARCO.ttf);
+}
+
+body {
+  font-family: ARCO, serif;
+}
+
+.web3modal-modal-lightbox{
+  z-index: 9999!important;
+}
+
+//scroll
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $colorScroll;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $colorScroll;
+}
+.ant-notification{
+  .ant-notification-notice-message {
+    line-height: 1 !important;
+    font-size: 22px !important;
+  }
+  
+  .ant-notification-notice-description {
+    font-size: 20px !important;
+  } 
+}
