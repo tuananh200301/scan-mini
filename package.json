@@ -1,6 +1,6 @@
 {
   "homepage": "http://tuananh200301.github.io/scan-mini",
-  "name": "solana",
+  "name": "scan",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
