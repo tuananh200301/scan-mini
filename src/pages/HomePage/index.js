@@ -44,10 +44,9 @@ const HomePage = (props) => {
     <h1>Welcome to Telegram Web App</h1>
     {userData && (
       <div>
-          <p><strong>User Data:</strong> {JSON.stringify(userData)}</p>
-          <p><strong>Init Data:</strong> {initData}</p>
-          <p><strong>Init Data Unsafe:</strong> {JSON.stringify(initDataUnsafe)}</p>
-          <p><strong>User Agent:</strong> {userAgent}</p>
+          <p><strong>User Data:</strong>Họ tên: {userData.first_name} {userData.last_name}</p>
+          <p><strong>Init Data:</strong>Username: {userData.username}</p>
+          <p><strong style={{maxWidth: 420}}>Init Data:</strong> {initData}</p>
       </div>
   )}
      <div className={styles.btnCreate} onClick={handleButtonClick}>Create account</div>
