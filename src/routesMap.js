@@ -9,7 +9,7 @@ const routeMap = {
     component: 'NotFound',
   },
   [ROUTE_HOME]: {
-    path: '/',
+    path: '/scan-mini',
     component: 'HomePage',
   },
 }
