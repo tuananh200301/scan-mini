@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksolana=self.webpackChunksolana||[]).push([[296],{4296:(a,s,e)=>{e.r(s),e.d(s,{default:()=>c});e(9950);var f=e(300);const l="styles_aridropWrap__gd+Xa";var r=e(4414);const c=(0,f.Ng)((a=>({})),{})((a=>(0,r.jsx)("div",{className:l,children:"fffff"})))}}]);
