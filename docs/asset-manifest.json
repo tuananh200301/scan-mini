@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/scan-mini/static/css/main.662c9876.css",
-    "main.js": "/scan-mini/static/js/main.133a4ab8.js",
+    "main.js": "/scan-mini/static/js/main.5d8d316d.js",
     "static/css/296.cedc686d.chunk.css": "/scan-mini/static/css/296.cedc686d.chunk.css",
     "static/js/296.9005f858.chunk.js": "/scan-mini/static/js/296.9005f858.chunk.js",
     "static/js/206.f4c12f59.chunk.js": "/scan-mini/static/js/206.f4c12f59.chunk.js",
@@ -11,6 +11,6 @@
   },
   "entrypoints": [
     "static/css/main.662c9876.css",
-    "static/js/main.133a4ab8.js"
+    "static/js/main.5d8d316d.js"
   ]
 }
