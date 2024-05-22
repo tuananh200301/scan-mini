@@ -82,3 +82,18 @@ export const getObjectLocalStorage = (key, path = '') => {
   return result
 };
 
+export const isTelegramApp = () => {
+  const userAgent = navigator.userAgent.toLowerCase();
+  if (userAgent.includes('telegram')) {
+    return true;
+  } else if (window.Telegram && window.Telegram.WebApp) {
+    const platform = window.Telegram.WebApp.platform;
+    if (platform === 'tdesktop' || platform === 'android' || platform === 'ios') {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+};

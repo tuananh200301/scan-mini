@@ -5,7 +5,7 @@ import {
 	takeLatest,
 	select,
 } from 'redux-saga/effects';
-import {BOOT, bootFinished} from './';
+import {BOOT, bootFinished, setInitData} from './';
 import {redirect} from 'redux-first-router';
 import {
 	selectRouteType,
@@ -21,7 +21,7 @@ function* watchAppBoot() {
 		const currentRoute = routesMap[routeType];
 		const {location} = yield select();
 		if (currentRoute && getAccessToken()) {
-			
+			yield put(setInitData(null));
 		} else {
 			yield put(bootFinished());
 			yield put(redirect({

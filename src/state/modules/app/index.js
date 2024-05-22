@@ -6,11 +6,18 @@ export const BOOT_FINISHED = 'BOOT_FINISHED';
 export const SET_TRANSACTION_LOADING = 'SET_TRANSACTION_LOADING';
 export const SET_BUTTON_LOADING = 'SET_BUTTON_LOADING';
 
+export const SET_USER_DATA = 'SET_USER_DATA';
+export const SET_INIT_DATA = 'SET_INIT_DATA';
+export const SET_INIT_DATA_UNSAFE = 'SET_INIT_DATA_UNSAFE';
+
 const defaultState = {
   isBooting: false,
   bootDidFinish: false,
   loginButtonLoading: false,
   transactionLoading: false,
+  userData: null,
+  initData: null,
+  initDataUnsafe: null,
 };
 
 const reducer = createReducer(defaultState, {
@@ -29,6 +36,15 @@ const reducer = createReducer(defaultState, {
   }),
   [SET_BUTTON_LOADING]: (state, action) => ({
     ...state, loginButtonLoading: action.payload
+  }),
+  [SET_USER_DATA]: (state, action) => ({
+    ...state, userData: action.payload
+  }),
+  [SET_INIT_DATA]: (state, action) => ({
+    ...state, initData: action.payload
+  }),
+  [SET_INIT_DATA_UNSAFE]: (state, action) => ({
+    ...state, initDataUnsafe: action.payload
   }),
 });
 
@@ -55,6 +71,20 @@ export const setButtonLoading = (payload) => ({
   payload: payload
 });
 
+export const setUserData = (payload) => ({
+  type: SET_USER_DATA,
+  payload: payload
+});
+
+export const setInitData = (payload) => ({
+  type: SET_INIT_DATA,
+  payload: payload
+});
+
+export const setInitDataUnsafe = (payload) => ({
+  type: SET_INIT_DATA_UNSAFE,
+  payload: payload
+});
 
 // export const getAuthInfo = () => async (dispatch, getState) => {
 //   return await callAPI({
